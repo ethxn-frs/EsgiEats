@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+
+  gateway:
+    build: ./gateway
+    ports:
+      - "3000:3000"
+    depends_on:
+      - order_service
+
+  order_service:
+    build: ./order_service
+    ports:
+      - "3001:3001"
+    depends_on:
+      - payment_service
+      - delivery_service
+
+  payment_service:
+    build: ./payment_service
+    ports:
+      - "3002:3002"
+
+  delivery_service:
+    build: ./delivery_service
+    ports:
+      - "3003:3003"
+
+  restaurant_service:
+    build: ./restaurant_service
+    ports:
+      - "3004:3004"
+
