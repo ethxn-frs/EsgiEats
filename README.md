@@ -113,13 +113,13 @@ Body:
 
 ---
 
-## ⚠️ Cas simulés pris en charge
+## Cas simulés pris en charge
 
-- ❌ Restaurant inexistant → 404
-- ❌ Plats inexistants → 400
-- ❌ Restaurant qui refuse la commande → 400
-- ❌ Paiement échoué → 500
-- ✅ Livraison OK → 200
+- Restaurant inexistant → 404
+- Plats inexistants → 400
+- Restaurant qui refuse la commande → 400
+- Paiement échoué → 500
+- Livraison OK → 200
 
 ---
 
