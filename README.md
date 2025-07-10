@@ -39,15 +39,16 @@ Chaque service est une app Express.js indépendante, conteneurisée avec Docker.
 
 ## 🧱 Diagramme de Conteneurs
 
-![Diagramme de Conteneurs](/diagramme/Micro-service-Page-2.drawio.png)
+![Diagramme de Conteneurs](/diagramme/Untitled%20diagram%20_%20Mermaid%20Chart-2025-07-10-065946.png)
 
 > Ce diagramme illustre les microservices, leurs bases de données, l’API Gateway, le broker de messages, et les services externes.
 
+![Diagramme de Conteneurs](/diagramme/Untitled%20diagram%20_%20Mermaid%20Chart-2025-07-10-070803.png)
 ---
 
 ## 🔄 Diagramme de Séquence – SAGA Commande
 
-![Diagramme de Séquence – SAGA](/diagramme/Micro-service-Page-3.drawio%20copy.png)
+![Diagramme de Séquence – SAGA](/diagramme/Untitled%20diagram%20_%20Mermaid%20Chart-2025-07-10-065109.png)
 
 > Ce diagramme montre une SAGA orchestrée pour le processus de commande, du panier à la livraison.
 
