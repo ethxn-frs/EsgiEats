@@ -19,17 +19,37 @@ Elle permet à un client de :
 
 ## Architecture
 
-| Microservice         | Description                                                 |
-|----------------------|-------------------------------------------------------------|
-| `gateway`            | Point d’entrée de l’application                             |
-| `order_service`      | Orchestration du processus de commande (SAGA)               |
-| `payment_service`    | Simule un paiement (20% de chance d’échec)                  |
-| `delivery_service`   | Simule une livraison avec assignation                       |
-| `restaurant_service` | Gère les restaurants, menus, acceptation/rejet de commandes |
+| Microservice          | Description                                                 |
+|---------------------- |-------------------------------------------------------------|
+| `gateway`             | Point d’entrée de l’application                             |
+| `order_service`       | Orchestration du processus de commande (SAGA)               |
+| `payment_service`     | Simule un paiement (20% de chance d’échec)                  |
+| `delivery_service`    | Simule une livraison avec assignation                       |
+| `restaurant_service`  | Gère les restaurants, menus, acceptation/rejet de commandes |
+| `notification_service`|Email, SMS, push                                             |
 
 Chaque service est une app Express.js indépendante, conteneurisée avec Docker.
 
+## 🧭 Diagramme de Contexte
+
+![Diagramme de Contexte](/diagramme/Micro-service-Page-1.drawio.png)
+
+> Ce diagramme montre les interactions entre les utilisateurs (clients, restaurants, livreurs) et la plateforme.
 ---
+
+## 🧱 Diagramme de Conteneurs
+
+![Diagramme de Conteneurs](/diagramme/Micro-service-Page-2.drawio.png)
+
+> Ce diagramme illustre les microservices, leurs bases de données, l’API Gateway, le broker de messages, et les services externes.
+
+---
+
+## 🔄 Diagramme de Séquence – SAGA Commande
+
+![Diagramme de Séquence – SAGA](/diagramme/Micro-service-Page-3.drawio%20copy.png)
+
+> Ce diagramme montre une SAGA orchestrée pour le processus de commande, du panier à la livraison.
 
 ## Données & Mock
 
